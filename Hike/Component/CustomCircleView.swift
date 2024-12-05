@@ -20,7 +20,7 @@ struct CustomCircleView: View {
                         startPoint: isAnimateGradient ? .topLeading : .bottomLeading,
                         endPoint:  isAnimateGradient ? .bottomTrailing : .topTrailing))
                 .onAppear {
-                    withAnimation(.linear(duration: 3.0).repeatForever(autoreverses: true)) {
+                    withAnimation(.linear(duration: 2.0).repeatForever(autoreverses: true)) {
                         isAnimateGradient.toggle()
                     }
                     
